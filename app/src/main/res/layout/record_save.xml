@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="400dp"
+    android:layout_height="200dp">
+
+    <TextView
+        android:id="@+id/txt_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="저장할 파일 이름을 지정해 주세요"
+        android:textSize="15sp" />
+
+    <EditText
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+        android:id="@+id/titleEdit"
+        android:singleLine="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/reordTag"/>
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:text=""
+        android:id="@+id/check"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/titleEditBtn"
+            android:text="결정"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/noSave"
+            android:text="저장 안함"/>
+    </LinearLayout>
+
+
+</LinearLayout>
